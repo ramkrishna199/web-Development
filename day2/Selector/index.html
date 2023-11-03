@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector | Practice</title>
+
+    <style>
+
+          /*Universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+        /*Child Selector*/
+        div >p{
+            background-color: yellow;
+        }
+        /* Descendend Selector*/
+        div p{
+            background-color: blue;
+        }
+/*element Selector*/
+        div{
+            background-color: rgb(242, 198, 198);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ab quod mollitia commodi, molestiae ipsa.
+    </div>
+
+    <div class="red">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, earum.
+    </div>
+
+    <div id="green">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate voluptatibus aliquam voluptate maxime ipsum illum exercitationem, esse unde doloribus sed?
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet.
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, temporibus? Modi, laborum corporis dignissimos voluptates quam ab doloribus quisquam nisi.</p>
+        <span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vel, possimus dolores tempora ut iure, debitis voluptatem perferendis, rem beatae eveniet nesciunt! Aut fuga officia maiores ab dolorem repellat incidunt.</p>
+        </span>
+    </div>
+
+    <div>
+        Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, temporibus? Modi, laborum corporis dignissimos voluptates quam ab doloribus quisquam nisi.
+        <span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vel, possimus dolores tempora ut iure, debitis voluptatem perferendis, rem beatae eveniet nesciunt! Aut fuga officia maiores ab dolorem repellat incidunt.</p>
+        </span>
+    </div>
+</body>
+</html>
