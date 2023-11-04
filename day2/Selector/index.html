@@ -7,30 +7,35 @@
 
     <style>
 
-          /*Universal selector */
+          /* 1. Universal selector */
         *{
             margin: 0;
             padding: 0;
         }
-        /* Class Selector */
+        /*2. Class Selector */
         .red{
             background-color: red;
         }
-        /* Id Selector */
+        /*3. Id Selector */
         #green{
             background-color: green;
         }
-        /*Child Selector*/
+        /*4. Child Selector*/
         div >p{
             background-color: yellow;
         }
-        /* Descendend Selector*/
+        /*5. Descendend Selector*/
         div p{
             background-color: blue;
         }
-/*element Selector*/
+/*6. Element Selector*/
         div{
             background-color: rgb(242, 198, 198);
+        }
+
+        /*Psudo Selector*/
+        div:hover{
+            cursor: pointer;
         }
     </style>
 </head>
