@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+
+.td-email{
+
+  & .td-button{
+    display: none;
+  }
+
+  /* & .td-input{
+    display: none;
+  } */
+}
+
+.td-email:hover{
+
+  & .td-button{
+    display: block;
+  }
+}
+
+.td-email:hover{
+
+  & .td-button{
+    display: block;
+  }
+}
