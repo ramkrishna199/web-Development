@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    /* 1rem=10px */
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    padding: 0 24rem;
+    margin-top: 2.4rem;
+}
+
+.container .navbar-brand img{
+    width: 30%;
+}
+
+.container .navbar ul li form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.container .navbar ul li form select{
+    border: none;
+}
+ul ,li,a{
+    list-style: none;
+}
