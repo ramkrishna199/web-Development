@@ -11,23 +11,33 @@ function App() {
   const [score,setScore] = useState(0);
 
   useEffect(()=>{
-    const fetchFunction = async ()=>{
-      try {
-        const responce = await axios.get(API_URL);
-        setQustions(responce.data.results);
-        console.log(responce.data.results);
-      } catch (error) {
-        console.log("Error fatching .....",error);
-      }
-    };
-      fetchFunction();
-
+    // const fetchFunction = async ()=>{
+    //   try {
+    //     const responce = await axios.get(API_URL);
+    //     setQustions(responce.data.results);
+    //     console.log(responce.data.results);
+    //   } catch (error) {
+    //     console.log("Error fatching .....",error);
+    //   }
+    // };
+    //   fetchFunction();
+    func()
   },[])
 
    
   const restartQuize=()=>{
     setCurrentQs(0);
     setScore(0);
+  }
+
+  const func=async()=>{
+    axios.get(API_URL)
+    .then((res)=>{
+      console.log(res);
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
   }
 
   const handleAnswerClick=(isCorrect)=>{
