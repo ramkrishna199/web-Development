@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid red;
+        }
+    </style>
 </head>
+
 <body>
-    
-    <script src="index.js"></script>
+    <!-- <h1>hiiii</h1> -->
+
+    <canvas id="myChart" width="1000" height="1000">
+
+    </canvas>
+    <script>
+        var canvas = document.getElementById('myChart')
+        var ctx = canvas.getContext('2d')
+
+        let xValues = ['Italy', 'France', 'Spain', 'USA', 'Argentina']
+        let yValues = [55, 49, 44, 24, 15]
+        var barColors = ['red', 'green', 'blue', 'orange', 'brown']
+
+        let myChart = new Chart(chart, {
+            type: 'bar',
+            data: {
+                labels: xValues,
+                datasets: [{
+                    barColors,
+                    data: yValues
+                }]
+            },
+        })
+    </script>
 </body>
+
 </html>
